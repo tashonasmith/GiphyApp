@@ -1,0 +1,27 @@
+Create divs for buttons, gif display and "Add Actor"
+Create input field for "Add Actor"
+Create submit button
+Create array for initial buttons
+Create var "animal"
+Create query URL (limit 10 gifs)
+Create AJAX call to display gifs for button being pushed:
+    -Empty gif display div
+    -Retrieve 10 gifs
+    -Make element to display 10 gifs
+    -retrieve gif ratings
+    -make element to display ratings
+    -Append both elements to gif display divs
+Create function to render actor buttons
+    -Empty buttons view div
+    -Create var that equals <button>
+    -Add class of "actor" to button
+    -add attribute to button ("data-name", actors[i])
+    -add text to button (actors[i])
+    -append buttons to buttons view
+Create function for add actor button
+    -event.preventDefault()
+    -create var actor to grab input from input box
+    -push new actor to actors array
+    -call render buttons function
+Add click event listeners to all elements with class of movie
+Call render buttons function to display initial buttons
