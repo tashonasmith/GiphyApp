@@ -23,7 +23,7 @@ DONE - Create function to render actor buttons
     DONE-add attribute to button ("data-name", actors[i])
     DONE-add text to button (actors[i])
     DONE-append buttons to buttons view
-Create function for add actor button
+DONE - Create function for add actor button
     -event.preventDefault()
     -create var actor to grab input from input box
     -push new actor to actors array

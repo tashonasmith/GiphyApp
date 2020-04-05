@@ -26,7 +26,7 @@ function displayGifs() {
             actorImage.attr("data-state", "still");
             actorImage.addClass("gif");
 
-            $(".gif").click(function() {
+            $(".gif").on("click", function() {
                 var state = $(this).attr("data-state");
                 
                   if (state === "still") {
@@ -72,6 +72,15 @@ function renderButtons() {
         $("#buttons-view").append(a);
     }
 }
+
+$("#add-actor").on("click", function(){
+    event.preventDefault();
+
+    var actor = $("#actor-input").val().trim();
+    actors.push(actor);
+
+    renderButtons();
+});
 
 
 $(document).on("click", ".actor", displayGifs);
