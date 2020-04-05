@@ -1,18 +1,18 @@
 DONE - Create container for app
-Create divs for buttons, gif display and "Add Actor"
-Create input field for "Add Actor"
-Create submit button
-Create array for initial buttons
-Create var "animal"
-Create query URL (limit 10 gifs)
-Create AJAX call to display gifs for button being pushed:
-    -Empty gif display div
-    -Retrieve 10 gifs
-    -Make elements to display 10 gifs
-    -retrieve gif ratings
-    -make element to display ratings
-    -Append all elements to gif display divs
-Assign data-animate and data-still to each of 10 gifs
+DONE - Create divs for buttons, gif display and "Add Actor"
+DONE - Create input field for "Add Actor"
+DONE - Create submit button
+DONE - Create array for initial buttons
+DONE - Create var "actor" with attribute "data-actor"
+DONE - Create query URL (limit 10 gifs)
+DONE - Create AJAX call to display gifs for button being pushed:
+    DONE-Empty gif display div
+    DONE-Retrieve 10 gifs
+    DONE-Make elements to display 10 gifs
+    DONE-retrieve gif ratings
+    DONE-make element to display ratings
+    DONE-Append all elements to gif display divs
+DONE - Assign data-animate and data-still to each of 10 gifs
 Create on click function for pausing gifs
     -If gif state is still, change state to animate
     -Else - if gif state is animate, change state to still
@@ -28,5 +28,5 @@ Create function for add actor button
     -create var actor to grab input from input box
     -push new actor to actors array
     -call render buttons function
-Add click event listeners to all elements with class of movie
-Call render buttons function to display initial buttons
+DONE - Add click event listeners to all elements with class of "actor"
+DONE - Call render buttons function to display initial buttons
