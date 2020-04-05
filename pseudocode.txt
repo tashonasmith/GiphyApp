@@ -13,16 +13,16 @@ DONE - Create AJAX call to display gifs for button being pushed:
     DONE-make element to display ratings
     DONE-Append all elements to gif display divs
 DONE - Assign data-animate and data-still to each of 10 gifs
-Create on click function for pausing gifs
+DONE - Create on click function for pausing gifs
     -If gif state is still, change state to animate
     -Else - if gif state is animate, change state to still
-Create function to render actor buttons
-    -Empty buttons view div
-    -Create var that equals <button>
-    -Add class of "actor" to button
-    -add attribute to button ("data-name", actors[i])
-    -add text to button (actors[i])
-    -append buttons to buttons view
+DONE - Create function to render actor buttons
+    DONE-Empty buttons view div
+    DONE-Create var that equals <button>
+    DONE-Add class of "actor" to button
+    DONE-add attribute to button ("data-name", actors[i])
+    DONE-add text to button (actors[i])
+    DONE-append buttons to buttons view
 Create function for add actor button
     -event.preventDefault()
     -create var actor to grab input from input box
@@ -30,3 +30,4 @@ Create function for add actor button
     -call render buttons function
 DONE - Add click event listeners to all elements with class of "actor"
 DONE - Call render buttons function to display initial buttons
+Add CSS

@@ -20,17 +20,40 @@ function displayGifs() {
             var p = $("<p>").text("Rating: " + rating);
             var actorImage = $("<img>");
 
-            actorImage.attr("src", results[i].images.fixed_height.url);
-            actorImage.attr("data-still", results[i].images.fixed_height_still.url)
-            actorImage.attr("data-animate", results[i].images.fixed_height.url)
-            actorImage.attr("data-state", "animate");
-            actorImage.addClass("gif")
+            actorImage.attr("src", results[i].images.fixed_height_still.url);
+            actorImage.attr("data-still", results[i].images.fixed_height_still.url);
+            actorImage.attr("data-animate", results[i].images.fixed_height.url);
+            actorImage.attr("data-state", "still");
+            actorImage.addClass("gif");
+
+            $(".gif").click(function() {
+                var state = $(this).attr("data-state");
+                
+                  if (state === "still") {
+                      $(this).attr("src", $(this).attr("data-animate"));
+                      $(this).attr("data-state", "animate");
+                    } else {
+                        $(this).attr("src", $(this).attr("data-still"));
+                        $(this).attr("data-state", "still");
+                    }
+                });
 
             gifDiv.append(p);
             gifDiv.append(actorImage);
 
             $("#gif-view").append(gifDiv);
-            //still need animate/still attributions
+
+            $(".gif").click(function() {
+              var state = $(this).attr("data-state");
+              
+                if (state === "still") {
+                    $(this).attr("src", $(this).attr("data-animate"));
+                    $(this).attr("data-state", "animate");
+                  } else {
+                      $(this).attr("src", $(this).attr("data-still"));
+                      $(this).attr("data-state", "still");
+                  }
+              });
         }
     });
     
@@ -49,6 +72,7 @@ function renderButtons() {
         $("#buttons-view").append(a);
     }
 }
+
 
 $(document).on("click", ".actor", displayGifs);
 
