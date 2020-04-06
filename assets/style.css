@@ -1,0 +1,66 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/background.jpg);
+}
+
+.container {
+    background-color: lightskyblue;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: x-large;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+#buttons-view {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.actor {
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: mediumpurple;
+    color: white;
+    font-size: medium;
+    border-radius: 4px;
+    border: 2px solid white;
+}
+
+#add-actor {
+    padding: 5px 10px;
+    background-color: royalblue;
+    color: white;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 2px solid white;
+    font-size: medium;
+    border-radius: 4px;
+}
+
+#actor-form {
+    padding-left: 20px;
+}
+
+label {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+#gif-view {
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-family: Tahoma, Geneva, sans-serif;
+    margin: 10px;
+}
