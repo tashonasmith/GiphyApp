@@ -78,6 +78,7 @@ $("#add-actor").on("click", function(){
 
     var actor = $("#actor-input").val().trim();
     actors.push(actor);
+    $("#actor-input").val("")
 
     renderButtons();
 });
